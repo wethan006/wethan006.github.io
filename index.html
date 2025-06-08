@@ -2,16 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>CheerpJ test</title>
+    <title>CheerpJ applet test</title>
     <script src="https://cjrtnc.leaningtech.com/4.1/loader.js"></script>
   </head>
   <body>
+    <applet
+      archive="java8.jar"
+      code="Main.class"
+      height="400"
+      width="400"
+    ></applet>
     <script>
-      (async function () {
-        await cheerpjInit();
-        cheerpjCreateDisplay(900, 900);
-        await cheerpjRunJar("/app/Capstone.jar");
-      })();
+      cheerpjInit();
     </script>
   </body>
 </html>
